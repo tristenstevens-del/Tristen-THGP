@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Tristen Stevens</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffffc8;
+    color:#000000;
+    line-height:1.6;
+}
+
+header{
+    background:#000000;
+    color:rgb(255, 255, 255);
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:#ff0000;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:qrgb(255, 0, 0);
+}
+
+.hero{
+    background:linear-gradient(135deg,#f4f4f4ea,#f90000);
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid rgb(255, 255, 255);
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:rgb(255, 255, 255);
+    color:red;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:rgb(255, 255, 255);
+    color:white;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#cc0000;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin:12px 0;
+}
+
+footer{
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Tristen Stevens</h1>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <img src="data:image/jpeg;base64,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" alt="Profile Picture">
+
+    <h1>Hey, I'm Tristen 👋</h1>
+
+    <p>
+        Welcome to my personal website! This page is all about who I am,
+        what I enjoy, and what i want to help people with.
+    </p>
+
+    <a href="#about" class="btn">Learn More</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p style="text-align:center; font-size:18px;">
+My name is <strong>Tristen Stevens</strong>. I'm learning web development and
+crying while creating websites with HTML and CSS. This website is my first project
+as I continue improving my coding skills. I enjoy challenging myself,
+learning new technology, and building things that people can use.
+</p>
+
+</section>
+
+<section id="hobbies">
+
+<h2>My Hobbies</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💻 Coding</h3>
+<p>
+I do not like learning HTML, CSS, or JavaScript.
+</p>
+</div>
+
+<div class="card">
+<h3>🎮 Gaming</h3>
+<p>
+Gaming is one of my favorite hobbies because it helps me relax and have fun.
+</p>
+</div>
+
+<div class="card">
+<h3>🏀 Sports</h3>
+<p>
+I want to help with call of duty and all games across all platforms.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="goals">
+
+<h2>My Goals</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎓 Learn More</h3>
+<p>
+I (Tristen) want to create this website to help people advance into the world of gaming.
+</p>
+</div>
+
+<div class="card">
+<h3>Cheap coaches</h3>
+<p>
+Everybody is so expensive nowadays but im very very cheap to work with.
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Future Career</h3>
+<p>
+Work with Tristen and You'll never have to work again.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<ul style="text-align:center;">
+<li>📧 Email: tristen.stevens@hgp.hiddengeniusproject.org@</li>
+<li>📍 Location: United States</li>
+<li>I need money so please mess with me</li>
+</ul>
+
+</section>
+
+<footer>
+
+<p>© 2026 Tristen Stevens | Thanks for visiting my About Me page!</p>
+
+</footer>
+
+</body>
+</html>
