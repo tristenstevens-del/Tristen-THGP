@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty | Professional Overview</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0d1117;
+            color:#f5f5f5;
+            line-height:1.7;
+        }
+
+        header{
+            background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+            url("https://i.pinimg.com/1200x/16/15/56/161556530c892bcd1c7b38df01de24ec.jpg");
+            background-size:cover;
+            background-position:center;
+            height:70vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:4rem;
+            text-transform:uppercase;
+            letter-spacing:3px;
+        }
+
+        header p{
+            margin-top:20px;
+            font-size:1.2rem;
+            color:#ddd;
+        }
+
+        nav{
+            background:#161b22;
+            padding:18px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#00c3ff;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:60px 0;
+        }
+
+        section{
+            margin-bottom:60px;
+        }
+
+        h2{
+            color:#00c3ff;
+            margin-bottom:20px;
+            font-size:2rem;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#161b22;
+            padding:25px;
+            border-radius:10px;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 15px 35px rgba(0,195,255,.25);
+        }
+
+        .card h3{
+            color:#00c3ff;
+            margin-bottom:15px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        footer{
+            background:#161b22;
+            text-align:center;
+            padding:30px;
+            color:#aaa;
+        }
+
+        .button{
+            display:inline-block;
+            margin-top:30px;
+            padding:15px 35px;
+            background:#00c3ff;
+            color:#000;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:6px;
+            transition:.3s;
+        }
+
+        .button:hover{
+            background:#00a0d1;
+            color:white;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.7rem;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Tristens Presentation</h1>
+        <p> COD is one of the world's leading first-person shooter game franchises. I have decided to make a website deticated to helping people succeed in the world of gaming.</p>
+        <a href="#about" class="button">Learn More</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#modes">Game Modes</a>
+    <a href="#Discription">Discription</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+    <h2>About Call of Duty</h2>
+
+    <p>
+        Call of Duty is a globally recognized first-person shooter (FPS) video game
+        franchise. Since its launch in 2003, the series has become known for
+        cinematic campaigns, competitive multiplayer gameplay, and high production
+        quality. Modern entries feature advanced graphics, realistic audio, and
+        cross-platform play.
+    </p>
+</section>
+
+<section id="features">
+
+    <h2>Key Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Campaign</h3>
+            <p>
+                We do not help with Campaign nor Zombies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Multiplayer</h3>
+            <p>
+                We start at 15 dollars an hour and we help with graphics and playstyle.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Zombies</h3>
+            <p>
+               We do not help with Zcombies or Campaign.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="modes">
+
+    <h2>Popular Game Modes</h2>
+
+    <ul>
+        <li>Team Deathmatch</li>
+        <li>Domination</li>
+        <li>Search & Destroy</li>
+        <li>Hardpoint</li>
+        <li>Free-for-All</li>
+        <li>Battle Royale</li>
+        <li>Zombies</li>
+    </ul>
+
+</section>
+
+<section id="Discription">
+
+    <h2>Discription about Cod(Call Of Duty)</h2>
+
+    <p>
+        Call of Duty has a massive worldwide player base supported by
+        tournaments, professional competition, livestreams, and regular
+        seasonal updates that introduce new maps, weapons, operators,
+        and gameplay features.
+    </p>
+
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Tristenisthebest.org</p>
+    <p>This is an unofficial call of duty page made by Tristen.</p>
+</footer>
+
+</body>
+</html>
