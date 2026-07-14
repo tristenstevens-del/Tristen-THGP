@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tristen Exotics NFTs</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            color: gold;
+        }
+
+        .header {
+            background-color: rgb(0, 0, 0);
+            color: rgb(253, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .section {
+            background-color: rgb(0, 0, 0);
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .nft {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 15px;
+            margin-top: 20px;
+            background-color: rgb(228, 0, 0);
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Tristen Exotics NFTs</h1>
+    <p>Buy Rare Digital Collectibles</p>
+</div>
+
+<div class="menu">
+    <a href="#home">Home</a>
+    <a href="#shop">NFTs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="section" id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to Tristen Exotics! Check out our exclusive NFT collection below.</p>
+</div>
+
+<div class="section" id="shop">
+
+    <h2>NFT Collection</h2>
+
+    <div class="nft">
+        <h3>Neon Skull</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSholWADcbJnB1IL-gxT5vzdcMra-fwfUSs9XRjRIG0Vw&s=10" alt="Neon Skull NFT">
+        <p>Price: $150</p>
+        <button onclick="buyNFT('Neon Skull')">Buy NFT</button>
+    </div>
+
+    <div class="nft">
+        <h3>Galaxy Ape</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGBvDCvuGDYWR29BEzTCTreMa7wdjVWnrt1LErEx-3Q&s=10" alt="Galaxy Ape NFT">
+        <p>Price: $320</p>
+        <button onclick="buyNFT('Galaxy Ape')">Buy NFT</button>
+    </div>
+
+    <div class="nft">
+        <h3>Crypto Tiger</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_O9BwTEJFRyC51Y4bRxXGpJc5eoOouAknyrMQY3VZKw&s=10">
+        <p>Price: $499</p>
+        <button onclick="buyNFT('Crypto Tiger')">Buy NFT</button>
+    </div>
+
+    <div class="nft">
+        <h3>Pixel Dragon</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZKhv0lWnQ6cmSGQtIGOiJcYTc6JOKV-Sqx-ZsnEuow&s=10" alt="Pixel Dragon NFT">
+        <p>Price: $275</p>
+        <button onclick="buyNFT('Pixel Dragon')">Buy NFT</button>
+    </div>
+
+</div>
+
+<div class="section" id="about">
+    <h2>About</h2>
+    <p>
+        Tristen Exotics is a beginner NFT marketplace where you can browse and
+        purchase unique digital collectibles.
+    </p>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact</h2>
+
+    <p>Name:</p>
+    <input type="text">
+
+    <p>Email:</p>
+    <input type="email">
+
+    <p>Message:</p>
+    <textarea rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<footer>
+    <p>© 2026 Tristen Exotics NFTs</p>
+</footer>
+
+<script>
+function buyNFT(name) {
+    alert("You selected: " + name);
+}
+
+function sendMessage() {
+    alert("Your message has been sent!");
+}
+</script>
+
+</body>
+</html>
